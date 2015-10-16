@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>成绩管理</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res/images.qrc">
+    <normaloff>:/HITers.ico</normaloff>:/HITers.ico</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="buttonQuery">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>370</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>成绩查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonCalcu">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>440</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>绩点计算</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>21</y>
+     <width>791</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QHeaderView::section{background:rgb(85, 170, 255)};</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <column>
+    <property name="text">
+     <string/>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>课程名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>学分</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>实验成绩</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>平时成绩</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>期末成绩</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>总成绩</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>考试类型</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QRadioButton" name="radioNow">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>410</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>本学期成绩</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioPast">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>450</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>以往所有成绩</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>390</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>学号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>450</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineStuid">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>380</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="linePwd">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>440</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file>HITers.ico</file>
+    <file>HIT.jpg</file>
+  </qresource>
+</RCC>
